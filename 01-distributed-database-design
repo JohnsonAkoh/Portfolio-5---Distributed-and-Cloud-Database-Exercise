@@ -1,0 +1,75 @@
+# Portfolio 5: Distributed and Cloud Database Exercise
+
+## MIVA Master in Information Technology
+
+**Specialisation:** Information Technology Management
+
+## 1. Project Overview
+
+This portfolio explores distributed and cloud database concepts using the Student Management System developed in previous MIVA MIT database portfolios.
+
+The project investigates how distributed database architecture can improve data availability, reliability, scalability, and performance.
+
+## 2. Case Study
+
+The Student Management System manages student records, departments, course registrations, and examination results.
+
+The project explores how these records can be managed across multiple database servers while maintaining data consistency and availability.
+
+## 3. Objectives
+
+- Understand distributed database architecture.
+- Implement PostgreSQL replication.
+- Explore data consistency and availability.
+- Explain database sharding and horizontal scalability.
+- Deploy database services using Docker.
+- Evaluate distributed database benefits and limitations.
+
+## 4. Proposed Technology Stack
+
+- PostgreSQL
+- Docker Desktop
+- Docker Compose
+- pgAdmin or PostgreSQL command-line tools
+- GitHub for project documentation and evidence
+
+## 5. Project Structure
+
+- `01-distributed-database-design/`
+- `02-postgresql-replication/`
+- `03-sharding-and-partitioning/`
+- `04-availability-and-consistency/`
+- `05-docker-deployment/`
+- `06-documentation-and-comparison/`
+- `07-evidence/screenshots/`
+
+## 6. Key Concepts
+
+### Replication
+Maintaining copies of database records across multiple database servers.
+
+### Sharding
+Distributing data across multiple database nodes to support scalability.
+
+### Availability
+Ensuring that database services remain accessible when failures occur.
+
+### Consistency
+Ensuring that database copies and transactions follow defined data consistency rules.
+
+### Cloud and Container Deployment
+Using containerised database services to demonstrate deployment and management.
+
+## 7. Expected Deliverables
+
+- Distributed database architecture design.
+- PostgreSQL replication implementation.
+- Sharding and partitioning discussion or demonstration.
+- Availability and consistency analysis.
+- Docker deployment evidence.
+- Screenshots of implementation and verification.
+- Final technical documentation and conclusions.
+
+## 8. Conclusion
+
+This project demonstrates the principles and practical application of distributed and cloud database systems through the Student Management System case study.
