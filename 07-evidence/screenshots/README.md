@@ -25,8 +25,6 @@ This folder stores screenshots and supporting evidence from the Distributed and 
 
 ## Evidence Naming Convention
 
-Use descriptive filenames, for example:
-
 - `docker-containers-running.png`
 - `postgres-primary-configuration.png`
 - `postgres-standby-configuration.png`
@@ -35,6 +33,6 @@ Use descriptive filenames, for example:
 - `partitioned-examination-results.png`
 - `database-recovery-test.png`
 
-## Note
 
-Only verified implementation screenshots should be marked as completed evidence.
+
+
