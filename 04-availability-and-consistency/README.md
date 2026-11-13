@@ -1,49 +1,43 @@
-Database Availability and Consistency
+# Database Availability and Consistency
 
-Overview
+## Overview
 
-This section looks at how a distributed database will have reliable access to data and have consistency in its replicated data.
+This section examines how distributed databases maintain reliable access to data and ensure that replicated records remain consistent.
 
-Availability
+## Availability
 
-Availability is the ability to have a functioning database during failure scenarios.
+Availability refers to the ability of a database system to remain accessible when failures occur.
 
-In this project we will have a standby PostgreSQL server which can be used to recover in the event of a failure.
+In this project, a standby PostgreSQL server will provide a foundation for recovery if the primary server becomes unavailable.
 
-Consistency
+## Consistency
 
-Consistency ensures that operations will keep the data intact.
+Consistency ensures that database operations preserve data integrity across the distributed system.
 
-Consistency Models
+## Consistency Models
 
-Synchronous Replication
+### Synchronous Replication
+The primary waits for confirmation from the standby before confirming certain transactions.
 
-Primary database will wait for an acknowledgement from the standby database for some transactions.
+### Asynchronous Replication
+The primary confirms transactions without waiting for the standby to receive them. This can introduce replication lag.
 
-Asynchronous Replication
+## Student Management System Scenario
 
-Primary database will confirm some transactions without waiting for these to be received by the standby. This can create lag in the replication.
+If a student examination result is updated on the primary server, replication should transfer the change to the standby server.
 
-Student Management System
+## Objectives
 
-When updating a students examination results in the primary database this should be replicated to the standby database.
+- Understand database availability.
+- Compare synchronous and asynchronous replication.
+- Examine replication lag.
+- Explore database failure and recovery.
+- Understand consistency and data-loss risks.
 
-Objectives
+## Implementation Status
 
-Understand what database availability is.
+Practical testing and analysis will be documented after PostgreSQL replication is configured.
 
-Compare synchronous and asynchronous replication.
+## Conclusion
 
-Explore lag in the replication.
-
-Examine failure and recovery of the database.
-
-Understand what consistency is and the risks of data loss.
-
-Implementation
-
-After setting up the replication with PostgreSQL, practical testing and analysis will be discussed.
-
-Conclusion
-
-Availability and consistency are important requirements to produce reliable distributed database systems.
+Availability and consistency are important requirements for reliable distributed database systems.
